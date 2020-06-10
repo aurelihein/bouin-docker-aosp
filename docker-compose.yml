@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  aosp:
+    image: bouin-docker-aosp:ubuntu_16.04-android_10
+    volumes:
+      - ~/aosp/ccache:/tmp/ccache
+      - ~/aosp:/aosp
+      - ~/.gitconfig:/root/.gitconfig
